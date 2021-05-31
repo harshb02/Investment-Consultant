@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/stylesheet/app.css" >
+
+    <title>Deepee Investment Consultants</title>
+  </head>
+  <body>
+      <header>
+    <nav class="navbar-default  appoint">
+        <div class="name">
+           DEEPEE INVESTMENT CONSULTANTS
+        </div>
+        <div class="menu">
+           <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/#about-us">About us</a></li>
+              <li><a href="/#ser">Services</a></li>
+              <li><a href="/feedback">Client Reviews</a></li>
+              <div class="dropdown">
+                 <li> <a href=""><i class="fa fa-phone"></i></span></a></li>
+                 <div class="dropdown-content">
+                   <a href="#">Harsh</a>
+                   <a href="#">Harsh</a>
+                   <a href="#">Harsh</a>
+                 </div>
+             </div>       
+             <li>
+               <a id="ContactModalOpen" class="nav-link" style="color: white">Get in Touch</a>
+             </li>
+           </ul>
+        </div>
+     </nav>
+     </header>
+   <section class="feedback" id="feedback">
+   <h4>Here are some </h4> 
+   <h1>Feedbacks for you</h1>
+    <ul>
+        <% for (let feedback of feedbacks){%>
+            <div class="card" mb-3>
+                <div class="row">
+                        <div class="card-body">
+                            <h5 class="card-text">Name: <%= feedback.name %> </h5>
+                            <p class="card-text">Company: <%= feedback.company %></p>
+                            <p class="card-text">Designation: <%= feedback.designation %></p>
+                            <p class="card-text">Feedback: <%= feedback.feedback %></p>
+                        </div>
+                    </div>
+                </div>
+        <% }%>
+    </ul>
+    </section>
+
+    <footer class="foot">
+  
+        <h3>FOLLOW DEEPEE INVESTMENT CONSULTANTS</h3>
+            <ul class="social-network social-circle">
+              <li class="list-inline-item scn "><a class="icoLinkedin" href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              <li class="list-inline-item scn "><a class="icoTwitter" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item scn"><a class="icoFacebook" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li class="list-inline-item scn"><a class="icoInstagram" href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+         
+           <ul>
+               <li class="list-inline-item info"><i class="fa fa-map-marker"></i><p>Greater Noida</p> </li>
+              <li class="list-inline-item info"><i class="fa fa-phone"></i><p>+91-9810538211</p></li>
+              <li class="list-inline-item info"><i class="fa fa-envelope"></i><p><a href="mailto:bajaj.alok30@gmail.com">bajaj.alok30@gmail.com</a></p></li>
+              </ul>
+            </footer>
+        <!-- Footer -->
+        <section class="sub-footer">
+        <p>Made with <i class="fa fa-heart"></i> by ASR Innovations </p> 
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="/js/script.js"></script>
+        
+    </html>

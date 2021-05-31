@@ -1,0 +1,186 @@
+    <% layout('layouts/boilerplate')%>
+   <div id="ContactModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+        <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"> Get in touch with us </h2>
+          <button type="button" class="close" id="ContactModalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="/contact" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input required type="text" class="form-control" id="inlineFormInputGroup" name="contact[name]" placeholder="Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-envelope"></i></div>
+                </div>
+                <input required type="text" class="form-control" id="inlineFormInputGroup" name="contact[email]" placeholder="Email Address" required>
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-phone"></i></div>
+                </div>
+                <input required type="text" class="form-control" id="inlineFormInputGroup" name="contact[phone]" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-edit"></i></div>
+                </div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="contact[query]" placeholder="Query" required></textarea>
+                </div>
+          </div>
+            <div class="form-row">
+                <a href="" class="cancel-form-button ml-auto" data-dismiss="modal">Cancel</a>
+                <button type="submit" id= "submit" class="suggestion-form-button ml-1">Submit</button>
+            </div>
+            <div id="myAlert" class="alert alert-success collapse">
+              <a id="linkClose" href="#" class="close">&times;</a>
+              <strong>Successfully Submitted</strong> Thankyou for Contacting us.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+ <section class="contact-page" id="contact-page">
+  <div class="container-fluid">
+        <div class="row imag">
+            <div class="layer1"> 
+            <h1>CLIENT REVIEWS</h1>
+            <h6>Did you like our services? Share your experience of working with us.</h6>
+            <a id="FeedbackModalOpen" class="touch">Give Feedback</a>
+          </div>
+        </div>
+    </div>
+</section>
+<div id="FeedbackModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="content">
+        <!-- Contact Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"> Give us a Review </h2>
+          <button type="button" class="close" id="FeedbackModalClose">&times;</button>
+        </div>
+        <div class="modal-body">
+            <form action="/feedback" method="POST">
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-user"></i></div>
+                </div>
+                <input required type="text" class="form-control" id="inlineFormInputGroup" name="feedback[name]" placeholder="Name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                </div>
+                <input required type="text" class="form-control" id="inlineFormInputGroup" name="feedback[company]" placeholder="Company Name" required>
+                </div>
+              </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-briefcase"></i></div>
+                </div>
+                <input required type="text" class="form-control" id="inlineFormInputGroup" name="feedback[designation]" placeholder="Designation" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fa fa-edit"></i></div>
+                </div>
+                <textarea class="form-control" id="feedback" rows="3" name="feedback[feedback]" placeholder="Feedback" required></textarea>
+                </div>
+          </div>
+            <div class="form-row">
+              <button type="submit" class="servic">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<body>
+<section class="client" id="client">
+    <div class="container mt-5">
+    <h4 class="serr">HAVE A LOOK ON</h4>
+    <h1> WHAT OUR CLIENTS SAY ABOUT US</h1>
+        <div class="card-columns">
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker<br> 
+                     ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                   <div class="client-review card">
+                    <blockquote>
+                     <h3>ALOK IS VERY COMPETENT IN HIS WORK.WOULD ALWAYS GUIDE YOU FOR YOUR BEST OF INTEREST.I'M ASSOCIATED WITH HIM FOR THE PAST 15 YEARS,AND HE HAS NEVER DISAPPOINTED ME. A THOROUGH GENTLEMAN.<br> <BR> ABHA MALHOTRA</h3>
+                    </blockquote>
+                  </div>
+                  <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+    
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit <br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+                <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+            
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+               <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+              <div class="client-review card">
+                    <blockquote>
+                     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> ~Peter F. Drucker</h3>
+                    </blockquote>
+                  </div>
+        </div>
+    </div>
+</section>
